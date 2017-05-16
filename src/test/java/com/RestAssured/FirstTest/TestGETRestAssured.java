@@ -5,10 +5,6 @@ import org.junit.Test;
 
 import com.jayway.restassured.RestAssured;
 import com.jayway.restassured.response.Response;
-
-import static junit.framework.Assert.*;
-
-import static org.hamcrest.Matchers.*;
 import static com.jayway.restassured.RestAssured.*;
 
 public class TestGETRestAssured {
@@ -29,20 +25,22 @@ public class TestGETRestAssured {
 	public void HTTPGETStudentDetails(){
 		//given when then is methods of Request Specification library
 		
-		Response rr=given()
+		given()
 				.when()
-				.get("/list");
-				System.out.println(rr.body().prettyPrint());
+				.get("/list").then()
+				.statusCode(200);
+				}
+			
+				
+				//System.out.println(rr.body().prettyPrint());
 				
 	//validate status code 
-		given()
+	//	given()
 		
-		.when()
-		.get("/list")
+		//.when()
+		//.get("/list")
 		
-		.then()
-		.statusCode(200);
-		}
+	
 	
 	//validate the get parameters 
 	

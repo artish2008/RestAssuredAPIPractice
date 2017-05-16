@@ -28,14 +28,14 @@ public class TestPOSTcreatenewstudent {
 	public void CreatenewStudentPOST(){
 		
 		List<String> course=new ArrayList<String>();//arraylist class is ilpementing List Interface
-		course.add("computer");
-		course.add("maths");
+		course.add("computer2");
+		course.add("maths2");
 		
 		StudentPOJO ss= new StudentPOJO();
-		ss.setFirstName("arti");
-		ss.setLastName("sharma");
-		ss.setEmail("aa@gmail.com");
-		ss.setProgramme("MBA");
+		ss.setFirstName("arti2");
+		ss.setLastName("sharma2");
+		ss.setEmail("aadd@gmail.com");
+		ss.setProgramme("MBA2");
 		ss.setCourses(course);
 		
 	 given()

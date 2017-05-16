@@ -4,7 +4,7 @@ import java.util.List;
 
 public class StudentPOJO {
 	
-	// payload
+	//response payload
 	/*//
 	[
       {
